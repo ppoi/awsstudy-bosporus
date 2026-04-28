@@ -1,0 +1,23 @@
+{
+  "name": "awsstudy/bosporus",
+  "image": "ghcr.io/ppoi/devcontainer-images/base:latest",
+  "containerUser": "vscode",
+  "features": {
+    "./configure": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform",
+        "amazonwebservices.aws-toolkit-vscode",
+        "redhat.vscode-yaml"
+      ],
+      "settings": {
+        "files.encoding": "utf8",
+        "files.eol": "\r\n",
+        "editor.useTabStops": false,
+        "editor.tabSize": 2
+      }
+    }
+  }
+}

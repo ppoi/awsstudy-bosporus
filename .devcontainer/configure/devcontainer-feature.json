@@ -1,0 +1,14 @@
+{
+  "id": "configure",
+  "version": "1.0.0",
+  "mounts": [
+    {"source": "/var/run/docker.sock", "target": "/var/run/docker-host.sock", "type": "bind"}
+  ],
+  "capAdd": ["AUDIT_WRITE", "NET_RAW"],
+  "containerEnv": {
+    "TZ": "Asia/Tokyo",
+    "TF_CLI_CONFIG_FILE": "/home/vscode/.terraform/.terraformrc",
+    "TF_PLUGIN_CACHE_DIR": "/home/vscode/.terraform/plugin-cache"
+  },
+  "entrypoint": "/usr/local/share/entrypoint.sh"
+}
