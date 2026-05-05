@@ -1,0 +1,32 @@
+project_id          = "marmara"
+aws_application_arn = "arn:aws:resource-groups:ap-northeast-1:999999999999:group/bosporus/XXXXXXXXXXXXXXXXXXXXXXXXXX"
+region              = "ap-northeast-1"
+flow_log_role_arn   = "arn:aws:iam::999999999999:role/VpcFlowLogRole"
+vpc_specs = {
+  ipv4_cidr = "10.0.0.0/16"
+  application_subnet = {
+    "A" = {
+      network_address = 16
+    }
+    "B" = {
+      network_address = 17
+    }
+  }
+  application_ipv6only_subnet = {
+    "A" = {
+      network_address = 18
+    }
+    "B" = {
+      network_address = 19
+    }
+  }
+  tgw_subnet = {
+    "A" = {
+      network_address = 250
+    }
+    "B" = {
+      network_address = 251
+    }
+  }
+}
+tgw_id = "tgw-XXXXXXXXXXXXXXXXX"

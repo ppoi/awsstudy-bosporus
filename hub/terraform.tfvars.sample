@@ -1,0 +1,33 @@
+project_id                = "bosporus"
+aws_application_arn       = "arn:aws:resource-groups:ap-northeast-1:999999999999:group/bosporus/XXXXXXXXXXXXXXXXXXXXXXXXXX"
+region                    = "ap-northeast-1"
+tgw_asn                   = 4200000001
+flow_log_role_arn         = "arn:aws:iam::999999999999:role/VpcFlowLogRole"
+flow_log_retention_period = 1
+egress_vpc_specs = {
+  ipv4_cidr = "192.168.0.0/16"
+  public_subnet = {
+    "A" = {
+      network_address = 0
+    }
+    "B" = {
+      network_address = 1
+    }
+  }
+  tgw_subnet = {
+    "A" = {
+      network_address = 128
+    }
+    "B" = {
+      network_address = 129
+    }
+  }
+}
+spoke_vpcs = {
+  # "spoke-A" = {
+  #   vpc_id            = "vpc-XXXXXXXXXXXXXXXXX"
+  #   ipv4_cidr_block   = "10.0.0.0/16"
+  #   ipv6_cidr_block   = "2001:0db8:1:1::/56"
+  #   tgw_attachment_id = "tgw-attach-XXXXXXXXXXXXXXXXX"
+  # }
+}

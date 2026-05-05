@@ -1,0 +1,51 @@
+{
+  "terraform.experimentalFeatures.validateOnSave": true,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "files.eol": "\n"
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "files.eol": "\n"
+  },
+  "[terraform-stack]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "files.eol": "\n"
+  },
+  "[terraform-deploy]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "files.eol": "\n"
+  },
+  "[terraform-test]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "files.eol": "\n"
+  },
+  "[terraform-mock]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "files.eol": "\n"
+  },
+  "[terraform-search]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "files.eol": "\n"
+  },
+  "aws.cloudformation.completion.enabled": false,
+  "aws.cloudformation.diagnostics.cfnGuard.enabled": false,
+  "aws.cloudformation.diagnostics.cfnGuard.validateOnChange": false,
+  "aws.cloudformation.diagnostics.cfnLint.enabled": false,
+  "aws.cloudformation.diagnostics.cfnLint.lintOnChange": false,
+  "aws.cloudformation.hover.enabled": false
+}

@@ -1,0 +1,5 @@
+**/.terraform
+docs/reference
+**/.tmp
+**/terraform.tfvars
+**/backend.s3.config
