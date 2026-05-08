@@ -5,7 +5,7 @@ resource "aws_ec2_transit_gateway" "tgw" {
   description                        = "Regional Transit Gateway"
   amazon_side_asn                    = var.tgw_asn
   dns_support                        = "enable"
-  security_group_referencing_support = "disable"
+  security_group_referencing_support = "enable"
   default_route_table_association    = "disable"
   default_route_table_propagation    = "disable"
   multicast_support                  = "disable"

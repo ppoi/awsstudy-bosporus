@@ -124,7 +124,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "marmara" {
   ipv6_support                                    = "enable"
   dns_support                                     = "enable"
   appliance_mode_support                          = "disable"
-  security_group_referencing_support              = "disable"
+  security_group_referencing_support              = "enable"
   transit_gateway_default_route_table_association = false
   transit_gateway_default_route_table_propagation = false
 
